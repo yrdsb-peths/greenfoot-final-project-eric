@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class demon here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Eric Zheng 
+ * @version June 2022
  */
 public class Demon extends Actor
 {
@@ -15,11 +15,18 @@ public class Demon extends Actor
      */
     public Demon()
     {
+        GreenfootImage image = getImage();
+        image.scale(30,30);
+        setImage(image);
         
-        demon.scale(10,10);
     }
     public void act()
     {
         // Add your action code here.
+    }
+    
+    public void Attack()
+    {
+        
     }
 }

@@ -19,7 +19,7 @@ public class MyWorld extends World
         super(600, 400, 1); 
         
         Demon demon = new Demon();
-        addObject(demon(), 300, 200);
+        addObject(demon, 300, 200);
         
     }
 }
