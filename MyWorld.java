@@ -21,5 +21,8 @@ public class MyWorld extends World
         Demon demon = new Demon();
         addObject(demon, 300, 200);
         
+        Creep creep = new Creep();
+        addObject(creep,400,200);
+        
     }
 }
