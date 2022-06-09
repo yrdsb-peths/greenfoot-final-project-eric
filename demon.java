@@ -23,10 +23,33 @@ public class Demon extends Actor
     public void act()
     {
         // Add your action code here.
+        if(Greenfoot.isKeyDown("w"))
+        {
+            setRotation(270);
+            move(1);
+        }
+        if(Greenfoot.isKeyDown("s"))
+        {
+            setRotation(90);
+            move(1);
+        }
+        if(Greenfoot.isKeyDown("a"))
+        {
+            setRotation(0);
+            move(-1);
+        }
+        if(Greenfoot.isKeyDown("d"))
+        {
+            setRotation(0);
+            move(1);
+        } 
+        
     }
     
     public void Attack()
     {
+        Fireball.setLocation(Demon.getX(), Demon.getY());
+        
         
     }
 }

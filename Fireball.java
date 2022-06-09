@@ -22,4 +22,5 @@ public class Fireball extends Actor
     {
         // Add your action code here.
     }
+    
 }

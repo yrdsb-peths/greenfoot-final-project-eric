@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"Creep","h":"","u":""},{"l":"Demon","h":"","u":""},{"l":"Fireball","h":"","u":""},{"l":"MyWorld","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]
