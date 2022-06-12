@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Fireball extends Actor
+public class Fireball extends Mover
 {
     /**
      * Act - do whatever the Fireball wants to do. This method is called whenever
@@ -21,6 +21,7 @@ public class Fireball extends Actor
     public void act()
     {
         // Add your action code here.
+        move(10.0);
     }
     
 }

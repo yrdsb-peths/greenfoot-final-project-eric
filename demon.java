@@ -43,12 +43,17 @@ public class Demon extends Actor
             setRotation(0);
             move(1);
         } 
+        if(Greenfoot.isKeyDown("space"))
+        {
+            Attack();
+        }
         
     }
     
     public void Attack()
     {
-        Fireball.setLocation(Demon.getX(), Demon.getY());
+        Fireball fireball = new Fireball();
+        getWorld().addObject(fireball, getX(), getY());
         
         
     }
