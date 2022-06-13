@@ -35,8 +35,8 @@ public class Demon extends Actor
         }
         if(Greenfoot.isKeyDown("a"))
         {
-            setRotation(0);
-            move(-1);
+            setRotation(180);
+            move(1);
         }
         if(Greenfoot.isKeyDown("d"))
         {

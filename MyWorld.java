@@ -21,8 +21,17 @@ public class MyWorld extends World
         Demon demon = new Demon();
         addObject(demon, 300, 200);
         
-        Creep creep = new Creep();
-        addObject(creep,400,200);
+        createCreep();
         
+        
+        
+    }
+    
+    public void createCreep()
+    {
+        Creep creep = new Creep();
+        int x = Greenfoot.getRandomNumber(600);
+        int y = Greenfoot.getRandomNumber(300);
+        addObject(creep,x,y);
     }
 }

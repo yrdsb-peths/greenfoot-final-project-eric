@@ -22,6 +22,21 @@ public class Fireball extends Mover
     {
         // Add your action code here.
         move(10.0);
+        
+        // Remove mob after fireball hits it.
+        destroy();
+        
     }
-    
+    public void destroy()
+    {
+        if(isTouching(Creep.class))
+        {
+            removeTouching(Creep.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createCreep(); 
+            
+        }
+    }
 }
+        
+    
