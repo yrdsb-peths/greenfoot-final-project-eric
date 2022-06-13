@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Demon extends Actor
 {
-    GreenfootImage demon = new GreenfootImage("images/download.jpg");
+    GreenfootImage demon = new GreenfootImage("images/demon.jpg");
     /**
      * Act - do whatever the demon wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
