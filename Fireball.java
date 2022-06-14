@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Fireball extends Mover
 {
+    public int kills = 0;
+    
     /**
      * Act - do whatever the Fireball wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -33,15 +35,26 @@ public class Fireball extends Mover
         {
             removeTouching(Creep.class);
             MyWorld world = (MyWorld) getWorld();
-            for(int i=0;i<2;i++)
+            for(int i = 0; i< kills;i++)
             {
-            world.createCreep(); 
+                world.createCreep();
+            
             }
-        
+            
+            kills++;
+            
+            
             world.createCreep(); 
             world.increaseScore();
         }
         
+    }
+    public void hurt()
+    {
+        if(isTouching(Demon.class))
+        {
+            
+        }
     }
             
 }

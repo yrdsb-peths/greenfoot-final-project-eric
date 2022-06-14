@@ -61,4 +61,17 @@ public class Demon extends Actor
         
         
     }
+    
+    public boolean powerUp()
+    {
+        MyWorld world = (MyWorld) getWorld();
+        if (world.getPower()>=5)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
