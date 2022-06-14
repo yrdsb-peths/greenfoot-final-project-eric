@@ -40,9 +40,9 @@ public class Creep extends Actor
     
     public void attack()
     {
-        Fireball fireball = new Fireball();
-        getWorld().addObject(fireball, getX(), getY());
-        fireball.setRotation(getRotation());
+        DarkBall darkBall = new DarkBall();
+        getWorld().addObject(darkBall, getX(), getY());
+        darkBall.setRotation(getRotation());
         
         
     }
