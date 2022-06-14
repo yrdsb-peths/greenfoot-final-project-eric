@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Demon extends Actor
 {
+    static int x, y;
     GreenfootImage demon = new GreenfootImage("images/demon.jpg");
     /**
      * Act - do whatever the demon wants to do. This method is called whenever
@@ -47,6 +48,8 @@ public class Demon extends Actor
         {
             Attack();
         }
+        x = getX();
+        y = getY();
         
     }
     
