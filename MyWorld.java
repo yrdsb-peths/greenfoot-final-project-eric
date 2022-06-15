@@ -11,7 +11,7 @@ public class MyWorld extends World
     public int score = 0;
     Label scoreLabel = new Label(0,30);
     SimpleTimer creepTimer = new SimpleTimer();
-    public int time = 500;
+    public int time = 4000;
 
     /**
      * Constructor for objects of class MyWorld.
@@ -30,18 +30,25 @@ public class MyWorld extends World
         scoreLabel = new Label(0,30);
         addObject(scoreLabel,50,50);
         
-        spawnCreep();
+        
 
         
         
         
         
     }
+    
+    public void act()
+    {
+        spawnCreep();
+    }
 
     public void gameOver()
     {
         Label gameOverr = new Label("Game Over",70);
+        Label gameOverrr = new Label("ggwp",60);
         addObject(gameOverr,300,200);
+        addObject(gameOverrr,300,100);
     }
 
     public void increaseScore()

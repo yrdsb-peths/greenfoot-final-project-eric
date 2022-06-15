@@ -10,9 +10,6 @@ public class Creep extends Actor
 {
     public int pause = 100;
     SimpleTimer shotTimer = new SimpleTimer();
-    
- 
-
 
     /**
      * Act - do whatever the creep wants to do. This method is called whenever
@@ -24,33 +21,30 @@ public class Creep extends Actor
         image.scale(30,30);
         setImage(image);
     }
+
     public void act()
     {
         // Add your action code here.
-       if(pause>0)
-       pause--;
-       if(pause == 0)
-       {
-           attack();
-       }
-        
-        
+        if(shotTimer.millisElapsed()>500)
+        {
+            attack();
+        }
+
         setRotation(point_to(Demon.x, Demon.y));
-        
     }
-    
+
     public void attack()
     {
         if(shotTimer.millisElapsed() > 3000)
         {
-        DarkBall darkBall = new DarkBall();
-        getWorld().addObject(darkBall, getX(), getY());
-        darkBall.setRotation(getRotation());
-        shotTimer.mark();
+            DarkBall darkBall = new DarkBall();
+            getWorld().addObject(darkBall, getX(), getY());
+            darkBall.setRotation(getRotation());
+            shotTimer.mark();
         }      
-        
-        
+
     }
+
     public int point_to(int x, int y) 
     {
         int dx = x - getX(); 
@@ -59,5 +53,5 @@ public class Creep extends Actor
         rotation = Math.toDegrees(rotation); 
         return (int)rotation; 
     }
-    
+
 }
