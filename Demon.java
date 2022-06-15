@@ -9,18 +9,39 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Demon extends Actor
 {
     static int x, y;
-    GreenfootImage demon = new GreenfootImage("images/demon.jpg");
+    GreenfootImage[] demo = new GreenfootImage[5];
+    SimpleTimer animationTimer = new SimpleTimer();
     /**
      * Act - do whatever the demon wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public Demon()
     {
-        GreenfootImage image = getImage();
-        image.scale(30,30);
-        setImage(image);
-        
+        for(int i= 0 ; i<demo.length; i++)
+        {
+            demo[i] = new GreenfootImage("images/tile00" + i + ".png"); 
+            demo[i].scale(50,50);
+        }
+        setImage(demo[0]);
+        animationTimer.mark();
+
     }
+    /**
+     * Animate the demon
+     */
+    int imageIndex = 0;
+    public void animateDemon()
+    {
+        if(animationTimer.millisElapsed()<50)
+        {
+            return;
+        }
+        animationTimer.mark();
+        setImage(demo[imageIndex]);
+        imageIndex = (imageIndex + 1) % demo.length;
+
+    }
+
     public void act()
     {
         // Add your action code here.
@@ -50,17 +71,18 @@ public class Demon extends Actor
         }
         x = getX();
         y = getY();
-        
+
+        // Animate the demon
+        animateDemon();
+
     }
-    
+
     public void Attack()
     {
         Fireball fireball = new Fireball();
         getWorld().addObject(fireball, getX(), getY());
         fireball.setRotation(getRotation());
-        
-        
+
     }
-    
-    
+
 }
