@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class DarkBall extends Mover
 {
-    private double speed = 11.0;
     /**
      * Act - do whatever the DarkBall wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -23,7 +22,15 @@ public class DarkBall extends Mover
     public void act()
     {
         // Add your action code here.
-        shoot();
+        MyWorld world = (MyWorld) getWorld();
+        if(world.score>=5)
+        {
+            move(10.0);
+        }
+        else
+        {
+            move();
+        }
         if(isTouching(Demon.class))
         {
             hit();
@@ -39,10 +46,6 @@ public class DarkBall extends Mover
 
     }
     
-    public void shoot()
-    {
-        move(speed);
-        speed++;
-    }
+   
 
 }

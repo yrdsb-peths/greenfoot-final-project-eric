@@ -11,7 +11,7 @@ public class MyWorld extends World
     public int score = 0;
     Label scoreLabel = new Label(0,30);
     SimpleTimer creepTimer = new SimpleTimer();
-    public int time = 4000;
+    public int time = 1500;
 
     /**
      * Constructor for objects of class MyWorld.
