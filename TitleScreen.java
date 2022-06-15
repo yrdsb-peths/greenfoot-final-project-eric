@@ -30,6 +30,7 @@ public class TitleScreen extends World
             Greenfoot.setWorld(gameWorld);
         }
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -39,5 +40,8 @@ public class TitleScreen extends World
         Label label = new Label("press enter to begin", 50);
         addObject(label,296,297);
         label.setLocation(298,289);
+        Label label2 = new Label("use wasd to move and space to shoot", 40);
+        addObject(label2,288,109);
+        label2.setLocation(301,103);
     }
 }
