@@ -35,27 +35,11 @@ public class Fireball extends Mover
         {
             removeTouching(Creep.class);
             MyWorld world = (MyWorld) getWorld();
-            for(int i = 1; i< kills;i++)
-            {
-                world.createCreep();
-            
-            }
-            
-            kills++;
-            
-            
-            world.createCreep(); 
             world.increaseScore();
         }
         
     }
-    public void hurt()
-    {
-        if(isTouching(Demon.class))
-        {
-            
-        }
-    }
+   
             
 }
     

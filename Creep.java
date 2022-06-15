@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Creep extends Actor
 {
     public int pause = 100;
+    SimpleTimer shotTimer = new SimpleTimer();
     
  
 
@@ -40,9 +41,13 @@ public class Creep extends Actor
     
     public void attack()
     {
+        if(shotTimer.millisElapsed() > 3000)
+        {
         DarkBall darkBall = new DarkBall();
         getWorld().addObject(darkBall, getX(), getY());
         darkBall.setRotation(getRotation());
+        shotTimer.mark();
+        }      
         
         
     }
