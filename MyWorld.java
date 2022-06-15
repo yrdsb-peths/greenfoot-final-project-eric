@@ -10,7 +10,6 @@ public class MyWorld extends World
 {
     public int score = 0;
     Label scoreLabel = new Label(0,30);
-    public int power = 0;
     SimpleTimer creepTimer = new SimpleTimer();
     public int time = 500;
 
@@ -32,21 +31,7 @@ public class MyWorld extends World
         addObject(scoreLabel,50,50);
         creepTimer.mark();
         
-        if(creepTimer.millisElapsed()>time)
-        {
-            if(time>100)
-            {
-                createCreep();
-                
-                time-=300;
-                creepTimer.mark();
-            }
-            if(time<=100)
-            {
-                createCreep();
-                creepTimer.mark();
-            }
-        }
+        
         
         
         
@@ -78,9 +63,23 @@ public class MyWorld extends World
         
         
     }
-    public int getPower()
-    {
-        return power;
+    
+    public void spawnCreep()
+    {if(creepTimer.millisElapsed()>time)
+        {
+            if(time>100)
+            {
+                createCreep();
+                
+                time-=300;
+                creepTimer.mark();
+            }
+            if(time<=100)
+            {
+                createCreep();
+                creepTimer.mark();
+            }
+        }
     }
     
 }

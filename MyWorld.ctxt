@@ -11,5 +11,5 @@ comment3.target=void\ increaseScore()
 comment4.params=
 comment4.target=void\ createCreep()
 comment5.params=
-comment5.target=int\ getPower()
+comment5.target=void\ spawnCreep()
 numComments=6
