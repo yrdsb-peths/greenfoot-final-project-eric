@@ -18,20 +18,24 @@ public class DarkBall extends Mover
         image.scale(30,30);
         setImage(image);
     }
+
     public void act()
     {
         // Add your action code here.
         move(10.0);
-    }
-    
-    public void hit()
-    {
         if(isTouching(Demon.class))
         {
-            removeTouching(Demon.class);
-            MyWorld world = (MyWorld) getWorld();
-            world.gameOver();
+            hit();
         }
+
     }
-    
+    public void hit()
+    {
+
+        removeTouching(Demon.class);
+        MyWorld world = (MyWorld) getWorld();
+        world.gameOver();
+
+    }
+
 }
