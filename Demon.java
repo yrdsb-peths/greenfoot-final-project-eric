@@ -11,6 +11,7 @@ public class Demon extends Actor
     static int x, y;
     GreenfootImage[] demo = new GreenfootImage[5];
     SimpleTimer animationTimer = new SimpleTimer();
+    GreenfootSound demonSound = new GreenfootSound("demon.wav");
     /**
      * Act - do whatever the demon wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -82,6 +83,7 @@ public class Demon extends Actor
         Fireball fireball = new Fireball();
         getWorld().addObject(fireball, getX(), getY());
         fireball.setRotation(getRotation());
+        demonSound.play();
 
     }
 
