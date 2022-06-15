@@ -12,7 +12,7 @@ public class MyWorld extends World
     Label scoreLabel = new Label(0,30);
     public int power = 0;
     SimpleTimer creepTimer = new SimpleTimer();
-    public int time = 2000;
+    public int time = 500;
 
     /**
      * Constructor for objects of class MyWorld.
@@ -30,10 +30,22 @@ public class MyWorld extends World
         
         scoreLabel = new Label(0,30);
         addObject(scoreLabel,50,50);
+        creepTimer.mark();
         
         if(creepTimer.millisElapsed()>time)
         {
-            if(time
+            if(time>100)
+            {
+                createCreep();
+                
+                time-=300;
+                creepTimer.mark();
+            }
+            if(time<=100)
+            {
+                createCreep();
+                creepTimer.mark();
+            }
         }
         
         
