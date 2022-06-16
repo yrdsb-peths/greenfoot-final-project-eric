@@ -27,7 +27,7 @@ public class MyWorld extends World
         Creep creep = new Creep();
         addObject(creep,400,100);
 
-        scoreLabel = new Label(0,30);
+        scoreLabel = new Label("score: " + 0,30);
         addObject(scoreLabel,50,50);
         
         
@@ -54,7 +54,7 @@ public class MyWorld extends World
     public void increaseScore()
     {
         score++;
-        scoreLabel.setValue(score);
+        scoreLabel.setValue("score: " + score);
     }
 
     public void createCreep()
