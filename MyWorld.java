@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class MyWorld here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Eric
+ * @2022/6/16
  */
 public class MyWorld extends World
 {
@@ -29,33 +29,28 @@ public class MyWorld extends World
 
         scoreLabel = new Label("score: " + 0,30);
         addObject(scoreLabel,50,50);
-        
-        
+
 
         
         
-        
-        
     }
-    
+
     public void act()
     {
         spawnCreep();
     }
-
-    public void gameOver()
-    {
-        Label gameOverr = new Label("Game Over",70);
-        Label gameOverrr = new Label("ggwp",60);
-        addObject(gameOverr,300,200);
-        addObject(gameOverrr,300,100);
-    }
-
+    
+    /**
+     * increases score every kill
+     */
     public void increaseScore()
     {
         score++;
         scoreLabel.setValue("score: " + score);
     }
+    /**
+     * creates a creep
+     */
 
     public void createCreep()
     {
@@ -66,6 +61,11 @@ public class MyWorld extends World
         addObject(creep,x,y) ;
 
     }
+    
+    /**
+     * spawns creep faster and faster
+     */
+
     public void spawnCreep()
     {
         if(creepTimer.millisElapsed()>time-(score*100))
