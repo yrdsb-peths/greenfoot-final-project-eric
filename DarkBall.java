@@ -37,15 +37,14 @@ public class DarkBall extends Mover
         }
 
     }
+
     public void hit()
     {
 
         removeTouching(Demon.class);
-        MyWorld world = (MyWorld) getWorld();
-        world.gameOver();
+
+        Greenfoot.setWorld(new EndScreen());
 
     }
-    
-   
 
 }
