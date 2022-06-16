@@ -1,13 +1,15 @@
 #BlueJ class context
 comment0.target=Creep
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ creep\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ creep\ here.\r\n\ \r\n\ @author\ Eric\ Zheng\r\n\ @version\ june\ 2022\r\n
 comment1.params=
 comment1.target=Creep()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ creep\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\r\n\ constructor\ for\ Creep\ class\r\n
 comment2.params=
 comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ creep\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment3.params=
 comment3.target=void\ attack()
+comment3.text=\r\n\ the\ way\ creeps\ attack\r\n
 comment4.params=x\ y
 comment4.target=int\ point_to(int,\ int)
 numComments=5

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Fireball here.
+ * A fireball is the demon/player's way to attack
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Eric Zheng
+ * @version june 2022
  */
 public class Fireball extends Mover
 {

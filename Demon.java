@@ -13,8 +13,7 @@ public class Demon extends Actor
     SimpleTimer animationTimer = new SimpleTimer();
     GreenfootSound demonSound = new GreenfootSound("demon.wav");
     /**
-     * Act - do whatever the demon wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * constructor for Demon class 
      */
     public Demon()
     {
@@ -43,9 +42,14 @@ public class Demon extends Actor
 
     }
 
+    /**
+     * Act - do whatever the creep wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+
     public void act()
     {
-        // Add your action code here.
+        // basic commands
         if(Greenfoot.isKeyDown("w"))
         {
             setRotation(270);
@@ -77,7 +81,10 @@ public class Demon extends Actor
         animateDemon();
 
     }
-
+    
+    /**
+     * the way for demons/players to attack
+     */
     public void Attack()
     {
         Fireball fireball = new Fireball();

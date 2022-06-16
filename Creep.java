@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class creep here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Eric Zheng
+ * @version june 2022
  */
 public class Creep extends Actor
 {
@@ -12,15 +12,20 @@ public class Creep extends Actor
     SimpleTimer shotTimer = new SimpleTimer();
 
     /**
-     * Act - do whatever the creep wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * constructor for Creep class
      */
+
     public Creep()
     {
         GreenfootImage image = getImage();
         image.scale(30,30);
         setImage(image);
     }
+
+    /**
+     * Act - do whatever the creep wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
 
     public void act()
     {
@@ -32,7 +37,10 @@ public class Creep extends Actor
 
         setRotation(point_to(Demon.x, Demon.y));
     }
-
+    
+    /**
+     * the way creeps attack
+     */
     public void attack()
     {
         if(shotTimer.millisElapsed() > 3000)

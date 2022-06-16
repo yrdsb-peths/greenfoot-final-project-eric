@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DarkBall here.
+ * A darkball is the creep's way to attack
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Eric Zheng
+ * @version June 2022
  */
 public class DarkBall extends Mover
 {
