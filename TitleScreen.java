@@ -43,5 +43,9 @@ public class TitleScreen extends World
         Label label2 = new Label("use wasd to move and space to shoot", 40);
         addObject(label2,288,109);
         label2.setLocation(301,103);
+        Label label3 = new Label("kill creeps to increase score and avoid being shot", 30);
+        addObject(label3,295,47);
+        
+
     }
 }

@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Creep extends Actor
 {
-    public int pause = 100;
     SimpleTimer shotTimer = new SimpleTimer();
 
     /**
@@ -52,7 +51,9 @@ public class Creep extends Actor
         }      
 
     }
-
+    /**
+     * the way creeps turn to demons
+     */
     public int point_to(int x, int y) 
     {
         int dx = x - getX(); 
