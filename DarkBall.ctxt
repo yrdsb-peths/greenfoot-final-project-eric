@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=DarkBall
-comment0.text=\r\n\ A\ darkball\ is\ the\ creep's\ way\ to\ attack\r\n\ \r\n\ @author\ Eric\ Zheng\r\n\ @version\ June\ 2022\r\n
+comment0.text=\r\n\ A\ darkball\ is\ the\ creep's\ way\ to\ attack.\r\n\ \r\n\ @author\ Eric\ Zheng\r\n\ @version\ June\ 2022\r\n
 comment1.params=
 comment1.target=DarkBall()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ DarkBall\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
@@ -8,4 +8,5 @@ comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ hit()
+comment3.text=\r\n\ the\ interaction\ when\ the\ darkball\ hits\ the\ demon/player\r\n
 numComments=4

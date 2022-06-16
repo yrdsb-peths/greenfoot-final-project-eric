@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * The world the demon lives in.
  * 
- * @Eric
- * @2022/6/16
+ * @author Eric Zheng
+ * @version June 2022
  */
 public class MyWorld extends World
 {
@@ -30,16 +30,13 @@ public class MyWorld extends World
         scoreLabel = new Label("score: " + 0,30);
         addObject(scoreLabel,50,50);
 
-
-        
-        
     }
 
     public void act()
     {
         spawnCreep();
     }
-    
+
     /**
      * increases score every kill
      */
@@ -48,6 +45,7 @@ public class MyWorld extends World
         score++;
         scoreLabel.setValue("score: " + score);
     }
+
     /**
      * creates a creep
      */
@@ -61,7 +59,7 @@ public class MyWorld extends World
         addObject(creep,x,y) ;
 
     }
-    
+
     /**
      * spawns creep faster and faster
      */

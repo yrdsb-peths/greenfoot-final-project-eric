@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Creep
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ creep\ here.\r\n\ \r\n\ @author\ Eric\ Zheng\r\n\ @version\ june\ 2022\r\n
+comment0.text=\r\n\ Creeps\ are\ the\ enemies.\r\n\ \r\n\ @author\ Eric\ Zheng\r\n\ @version\ June\ 2022\r\n
 comment1.params=
 comment1.target=Creep()
 comment1.text=\r\n\ constructor\ for\ Creep\ class\r\n

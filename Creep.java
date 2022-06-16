@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class creep here.
+ * Creeps are the enemies.
  * 
  * @author Eric Zheng
- * @version june 2022
+ * @version June 2022
  */
 public class Creep extends Actor
 {
@@ -37,7 +37,7 @@ public class Creep extends Actor
 
         setRotation(point_to(Demon.x, Demon.y));
     }
-    
+
     /**
      * the way creeps attack
      */

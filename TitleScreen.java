@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TitleScreen here.
+ * Title Screen.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Eric Zheng 
+ * @version June 2022
  */
 public class TitleScreen extends World
 {
@@ -30,7 +30,7 @@ public class TitleScreen extends World
             Greenfoot.setWorld(gameWorld);
         }
     }
-    
+
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.

@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class demon here.
+ * The demon is the player.
  * 
  * @author Eric Zheng 
  * @version June 2022
@@ -81,7 +81,7 @@ public class Demon extends Actor
         animateDemon();
 
     }
-    
+
     /**
      * the way for demons/players to attack
      */

@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * A darkball is the creep's way to attack
+ * A darkball is the creep's way to attack.
  * 
  * @author Eric Zheng
  * @version June 2022
@@ -38,6 +38,9 @@ public class DarkBall extends Mover
 
     }
 
+    /**
+     * the interaction when the darkball hits the demon/player
+     */
     public void hit()
     {
 

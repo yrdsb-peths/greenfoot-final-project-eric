@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"Creep","h":"","u":""},{"l":"Demon","h":"","u":""},{"l":"Fireball","h":"","u":""},{"l":"MyWorld","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]
+typeSearchIndex = [{"l":"Creep","h":"","u":""},{"l":"DarkBall","h":"","u":""},{"l":"Demon","h":"","u":""},{"l":"EndScreen","h":"","u":""},{"l":"Fireball","h":"","u":""},{"l":"Label","h":"","u":""},{"l":"Mover","h":"","u":""},{"l":"MyWorld","h":"","u":""},{"l":"SimpleTimer","h":"","u":""},{"l":"TitleScreen","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]
